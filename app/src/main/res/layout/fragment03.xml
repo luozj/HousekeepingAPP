@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+
+
+    <LinearLayout
+        android:background="#90EE90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="vertical">
+        <com.jude.rollviewpager.RollPagerView
+            android:id="@+id/my_rpv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rollviewpager_play_delay="3000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+        <View
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#F2F2F2">
+        </View>
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="查询订单" />
+        <View
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#F2F2F2">
+        </View>
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/my_work"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="我的服务"
+                android:background="@drawable/my_textview_background"/>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+                android:background="#F2F2F2"></View>
+
+            <TextView
+                android:id="@+id/my_need"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="我的需求"
+                android:background="@drawable/my_textview_background"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="20dp"
+            android:text="位置保留待开发" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#F2F2F2">
+            </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="20dp"
+                android:text="位置保留待开发" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#F2F2F2">
+            </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="20dp"
+                android:text="位置保留待开发" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#F2F2F2">
+            </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="20dp"
+                android:text="位置保留待开发" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#F2F2F2">
+            </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="20dp"
+                android:text="位置保留待开发" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#F2F2F2">
+            </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="20dp"
+                android:text="位置保留待开发" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#F2F2F2">
+            </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="20dp"
+                android:text="位置保留待开发" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#F2F2F2">
+            </View>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

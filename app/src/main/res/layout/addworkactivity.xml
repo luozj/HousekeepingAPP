@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.请输入提供的服务"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/addwork_biaoti"
+                android:minWidth="300dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:maxLength="15"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="如：管道工某某提供通下水道服务！\n　　长度限制为15字符" />
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.请输入自身优势"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/addwork_shuoming"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:minLines="8"
+                android:maxLines="10"
+                android:scrollbars="vertical"
+                android:background="@android:drawable/edit_text"
+                android:maxLength="300">
+            </EditText>
+            <!--
+                android:maxLines="10"
+                android:scrollbars="vertical"
+            以上两行用来设置区域的最大行数是10，超过10行之后会以“竖直卷轴”的形式显示。-->
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="温馨提示:\n尽量将自己的优势描述清楚\n1、薪酬方面\n2、工作能力方面\n3、预计交付时间等\n　  长度限制为300字符" />
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.请输入目标酬劳"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/addwork_price"
+                android:minWidth="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:ems="8"
+                android:inputType="number" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="注意：\n货币单位为人民币\n300人民币就直接输入300" />
+            <Button
+                android:layout_marginTop="30dp"
+                android:id="@+id/addwork_buttom"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="确定提交" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

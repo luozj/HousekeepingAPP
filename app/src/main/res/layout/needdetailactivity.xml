@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:background="#90EE90"
+        android:orientation="vertical">
+        <com.jude.rollviewpager.RollPagerView
+            android:id="@+id/need_da_rpv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rollviewpager_play_delay="3000"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000">
+            </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="需求简介" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/need_da_textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000">
+            </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="说明" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/need_da_textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="#FF0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格为:" />
+        <TextView
+            android:textColor="#FF0000"
+            android:id="@+id/need_da_textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xx" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/need_da_buttom"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="立即预约" />
+</LinearLayout>

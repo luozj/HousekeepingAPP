@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:background="#90EE90"
+        android:orientation="vertical">
+        <com.jude.rollviewpager.RollPagerView
+            android:id="@+id/updateneed_rpv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rollviewpager_play_delay="3000"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="需求简介" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/updateneed_biaoti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Text"
+                    android:background="@android:drawable/edit_text"
+                    android:maxLength="15"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="说明" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/updateneed_shuoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:minLines="6"
+                    android:maxLines="10"
+                    android:gravity="top"
+                    android:text="Text" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="价格为:"
+                    android:textColor="#FF0000" />
+
+                <EditText
+                    android:id="@+id/updateneed_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="8"
+                    android:inputType="number"
+                    android:text="number"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/updateneed_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="修改" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/updateneed_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="删除" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

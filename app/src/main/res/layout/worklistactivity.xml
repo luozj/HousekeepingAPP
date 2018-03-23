@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:background="#90EE90"
+        android:orientation="vertical">
+        <com.jude.rollviewpager.RollPagerView
+            android:id="@+id/worklist_rpv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rollviewpager_play_delay="3000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/worklist_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/worklist_buttom"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="发布新的服务" />
+</LinearLayout>

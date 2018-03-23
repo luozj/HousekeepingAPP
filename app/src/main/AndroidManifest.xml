@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.enz.Housekeeping">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Roger毕设家政app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.enz.Housekeeping.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.enz.Housekeeping.workdetailactivity">
+        </activity>
+        <activity android:name="com.example.enz.Housekeeping.needdetailactivity">
+        </activity>
+        <activity android:name="com.example.enz.Housekeeping.worklistactivity">
+        </activity>
+        <activity android:name="com.example.enz.Housekeeping.needlistactivity">
+        </activity>
+        <activity android:name="com.example.enz.Housekeeping.addneed">
+        </activity>
+        <activity android:name="com.example.enz.Housekeeping.addwork">
+        </activity>
+        <activity android:name="com.example.enz.Housekeeping.updateneed">
+        </activity>
+        <activity android:name="com.example.enz.Housekeeping.updatework">
+        </activity>
+    </application>
+
+</manifest>
